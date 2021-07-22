@@ -8,6 +8,6 @@ jobs:
       - name: checkout repo content
         uses: actions/checkout@v1 # checkout the repository content to github runner.
       - name: execute py script # run the run.py to get the latest data
-        uses: ./action-a
+        uses: ./action-b
         with:
           MY_NAME: "Christopher Mortimer"
