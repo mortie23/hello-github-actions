@@ -1,9 +1,9 @@
 FROM python:3
 
-ADD testing.py /testing.py
+ADD testing.py ./testing.py
 
-COPY requirements.txt ./
+ADD requirements.txt ./requirements.txt
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-CMD [ "python", "./testing.py" ]
+RUN python testing.py
